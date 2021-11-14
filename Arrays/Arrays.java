@@ -29,13 +29,17 @@ public class Arrays {
         
         /*DONE*/
         // 3 - Remove the 3rd element of the array
+        // [d],[d],CHANGE[c],[c],[h],[h],[l],[l] = 8
+        // [d],[d],CHANGE[c],[h],[h],[l],[l] = 7
+        // before change, just copy simple
+        // during and after change, apply change
         int index = 2;
         LivingBeeing newCreatureArr[] = new LivingBeeing[7];
         for(int i = 0; i < newCreatureArr.length; i++) {
-            if(index <= i) {
-                newCreatureArr[i] = creatureArray[i + 1];
-            } else {
+            if(i < index) {
                 newCreatureArr[i] = creatureArray[i];
+            } else {
+                newCreatureArr[i] = creatureArray[i + 1];
             }
         }
         /*DONE*/

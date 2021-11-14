@@ -4,8 +4,9 @@ public class Dog extends Animal{
 
     private boolean isHuntingDog;
 
-    Dog(String breed, boolean isHuntingDog) {
-        super("Canis familiaris", breed, 4, 11.5);
+    Dog(int nbLegs, int nbEyes, String species, double lifeExpectancy, String breed, boolean isHuntingDog) {
+        // super("Canis familiaris", breed, 4, 11.5);
+        super(nbLegs, nbEyes, species, lifeExpectancy, breed);
         this.isHuntingDog = isHuntingDog;
     }
 
@@ -21,6 +22,4 @@ public class Dog extends Animal{
         String ret = "\nHunting dog: " + ((this.isHuntingDog == false) ? "No" : "Yes");
         return super.toString().concat(ret);
     }
-    
-      
 }

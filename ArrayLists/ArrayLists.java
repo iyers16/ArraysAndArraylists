@@ -14,25 +14,17 @@ public class ArrayLists {
         
         // 1 - Add the following to the array
         //      2 dogs, 2 cats, 2 humans and 2 Living beeings
-        // arraylists.LivingBeeing dog1 = new arraylists.Dog("Bloodhound", true);
-        creatureList.add(new arraylists.Dog("Bloodhound", true));
-        // arraylists.LivingBeeing dog2 = new arraylists.Dog("German Shepherd", false);
-        creatureList.add(new arraylists.Dog("German Shepherd", false));
+        creatureList.add(new arraylists.Dog(4, 2, "Canis familiaris", 11.5, "Bloodhound", true));
+        creatureList.add(new arraylists.Dog(4, 2, "Canis familiaris", 11.5, "German Shepherd", false));
 
-        // arraylists.LivingBeeing cat1 = new arraylists.Cat("Aphrodite", 14);
-        creatureList.add(new arraylists.Cat("Aphrodite", 14));
-        // arraylists.LivingBeeing cat2 = new arraylists.Cat("Bob Tail", 13);
-        creatureList.add(new arraylists.Cat("Bob Tail", 13));
+        creatureList.add(new arraylists.Cat(4, 2, "Felis Catus", 16.9, "Aphrodite", 14));
+        creatureList.add(new arraylists.Cat(4, 2, "Felis Catus", 16.9, "Bob Tail", 13));
 
-        // arraylists.LivingBeeing human1 = new arraylists.Human("Black");
-        creatureList.add(new arraylists.Human("Black"));
-        // arraylists.LivingBeeing human2 = new arraylists.Human("Brown");
-        creatureList.add(new arraylists.Human("Brown"));
+        creatureList.add(new arraylists.Human(2, 2, "Homo Sapiens Sapiens", 72.6, "Black"));
+        creatureList.add(new arraylists.Human(2, 2, "Homo Sapiens Sapiens", 72.6, "Brown"));
 
-        // arraylists.LivingBeeing lb1 = new arraylists.LivingBeeing(0, "Musa acuminata", 0, 25);
-        creatureList.add(new arraylists.LivingBeeing(0, "Musa acuminata", 0, 25));
-        // arraylists.LivingBeeing lb2 = new arraylists.LivingBeeing(0, "Cephalocereus", 0, 200);
-        creatureList.add(new arraylists.LivingBeeing(0, "Cephalocereus", 0, 200));
+        creatureList.add(new arraylists.LivingBeeing(0, 0, "Cephalocereus", 200));
+        creatureList.add(new arraylists.LivingBeeing(0, 0, "Musa acuminata", 25));
         
                
         // 2 - display the contents of the array by printing the actual objects of the array       

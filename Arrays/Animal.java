@@ -4,8 +4,9 @@ public class Animal extends LivingBeeing{
 
     protected String breed;
 
-    Animal(String species, String breed, int nbLegs, double lifeExpectancy) {
-        super(2, species, nbLegs, lifeExpectancy);
+    Animal(int nbLegs, int nbEyes, String species, double lifeExpectancy, String breed) {
+        // super(2, species, nbLegs, lifeExpectancy);
+        super(nbLegs, nbEyes, species, lifeExpectancy);
         this.breed = breed;
     }
 
@@ -21,6 +22,4 @@ public class Animal extends LivingBeeing{
         String ret = "\nBreed: " + this.breed;
         return super.toString().concat(ret);
     }
-    
-    
 }

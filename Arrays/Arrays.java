@@ -9,17 +9,17 @@ public class Arrays {
         /*DONE*/
         // 1 - Add the following to the array
         //      2 dogs, 2 cats, 2 humans and 2 Living beeings        
-        creatureArray[0] = new arrays.Dog("Bloodhound", true);
-        creatureArray[1] = new arrays.Dog("German Shepherd", false);
+        creatureArray[0] = new arrays.Dog(4, 2, "Canis familiaris", 11.5, "Bloodhound", true);
+        creatureArray[1] = new arrays.Dog(4, 2, "Canis familiaris", 11.5, "German Shepherd", false);
 
-        creatureArray[2] = new arrays.Cat("Aphrodite", 14);
-        creatureArray[3] = new arrays.Cat("Bob Tail", 13);
+        creatureArray[2] = new arrays.Cat(4, 2, "Felis Catus", 16.9, "Aphrodite", 14);
+        creatureArray[3] = new arrays.Cat(4, 2, "Felis Catus", 16.9, "Bob Tail", 13);
 
-        creatureArray[4] = new arrays.Human("Black");
-        creatureArray[5] = new arrays.Human("Brown");
+        creatureArray[4] = new arrays.Human(2, 2, "Homo Sapiens Sapiens", 72.6, "Black");
+        creatureArray[5] = new arrays.Human(2, 2, "Homo Sapiens Sapiens", 72.6, "Brown");
 
-        creatureArray[6] = new arrays.LivingBeeing(0, "Cephalocereus", 0, 200);
-        creatureArray[7] = new arrays.LivingBeeing(0, "Musa acuminata", 0, 25);
+        creatureArray[6] = new arrays.LivingBeeing(0, 0, "Cephalocereus", 200);
+        creatureArray[7] = new arrays.LivingBeeing(0, 0, "Musa acuminata", 25);
         /*DONE*/
  
         /*DONE*/

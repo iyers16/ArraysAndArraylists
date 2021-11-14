@@ -4,8 +4,9 @@ public class Human extends LivingBeeing{
     
     private String hairColor;
 
-    Human(String hairColor) {
-        super(2, "Homo Sapiens Sapiens", 2, 72.6);
+    Human(int nbLegs, int nbEyes, String species, double lifeExpectancy, String hairColor) {
+        // super(2, "Homo Sapiens Sapiens", 2, 72.6);
+        super(nbLegs, nbEyes, species, lifeExpectancy);
         this.hairColor = hairColor;
     }
     
@@ -23,3 +24,4 @@ public class Human extends LivingBeeing{
         return super.toString().concat(ret);
     }
 }
+

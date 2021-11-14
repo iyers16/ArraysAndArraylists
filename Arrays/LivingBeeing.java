@@ -6,7 +6,7 @@ public class LivingBeeing {
     protected String species;
     protected double lifeExpectancy;
 
-    LivingBeeing(int nbEyes, String species, int nbLegs, double lifeExpectancy) {
+    LivingBeeing(int nbLegs, int nbEyes, String species, double lifeExpectancy) {
         this.nbEyes = nbEyes;
         this.nbLegs = nbLegs;
         this.species = species;

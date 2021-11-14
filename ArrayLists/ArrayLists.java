@@ -2,7 +2,7 @@ package arraylists;
 
 import java.util.ArrayList;
 
-// import arrays.LivingBeeing;
+import arrays.LivingBeeing;
 // This import is interfering with package-independant classes
 
 public class ArrayLists {

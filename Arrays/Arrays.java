@@ -33,25 +33,26 @@ public class Arrays {
         // [d],[d],CHANGE[c],[h],[h],[l],[l] = 7
         // before change, just copy simple
         // during and after change, apply change
-        int index = 2;
-        LivingBeeing newCreatureArr[] = new LivingBeeing[7];
-        for(int i = 0; i < newCreatureArr.length; i++) {
-            if(i < index) {
-                newCreatureArr[i] = creatureArray[i];
-            } else {
-                newCreatureArr[i] = creatureArray[i + 1];
-            }
-        }
+        // int index = 2;
+        // LivingBeeing newCreatureArr[] = new LivingBeeing[7];
+        // for(int i = 0; i < newCreatureArr.length; i++) {
+        //     if(i < index) {
+        //         newCreatureArr[i] = creatureArray[i];
+        //     } else {
+        //         newCreatureArr[i] = creatureArray[i + 1];
+        //     }
+        // }
+        creatureArray[2] = null;
         /*DONE*/
         
         /*DONE*/
         // 4 - display the contents of the array by printing the actual objects of the array       
-        displayArrayObjects(newCreatureArr); 
+        displayArrayObjects(creatureArray); 
         /*DONE*/
 
         /*DONE*/
         // 5 - Change the nbLegs for all the dogs from 4 legs to 3 legs
-        for (LivingBeeing nlb : newCreatureArr) {
+        for (LivingBeeing nlb : creatureArray) {
             if(nlb instanceof Dog) {
                 nlb.setNbLegs(3);
             }
@@ -60,12 +61,12 @@ public class Arrays {
 
         /*DONE*/
         // 6 - display the contents of the array by printing the actual objects of the array       
-        displayArrayObjects(newCreatureArr);
+        displayArrayObjects(creatureArray);
         /*DONE*/
 
         /*DONE*/
         // 7 - Display the length of the array
-        System.out.println("\nLength of array is: " + newCreatureArr.length);
+        System.out.println("\nLength of array is: " + creatureArray.length);
         /*DONE*/
         
     }
@@ -73,6 +74,10 @@ public class Arrays {
         String delimiter = "*********************************************************************";
         System.out.println(delimiter);  
         for (LivingBeeing lb : lbs) {
+            if(lb == null) {
+                System.out.println("\nnull object");
+                continue;
+            }
             System.out.println(lb.toString());
         }
         System.out.println(delimiter);
